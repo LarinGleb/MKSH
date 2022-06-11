@@ -5,10 +5,21 @@ add_executable(Sort main.cpp)
 
 add_subdirectory(Bubble)
 add_subdirectory(MassiveFunc)
+add_subdirectory(Cocktail)
+add_subdirectory(Insertion)
+add_subdirectory(Gnome)
+add_subdirectory(StdSort)
 
 target_link_libraries(Sort Bubble)
 target_link_libraries(Sort Massive)
+target_link_libraries(Sort Cocktail)
+target_link_libraries(Sort Insertion)
+target_link_libraries(Sort Gnome)
+target_link_libraries(Sort Standart)
 
+add_dependencies(Sort Cocktail)
 add_dependencies(Sort Bubble)
 add_dependencies(Sort Massive)
-
+add_dependencies(Sort Gnome)
+add_dependencies(Sort Insertion)
+add_dependencies(Sort Standart)
