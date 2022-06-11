@@ -11,11 +11,11 @@ To compile to windows in the source folder, run:
 g++ main.cpp -o main.exe -lstdc++ -L "include/" -larr -lbubble -lcocktail -lstdnew -lgnome -linsertion
 
 If it is necessary to compile on Linux, then with CMake files are present:
-mkdir build
-cd build
-cmake ../
-do
-./Sort
+1)mkdir build
+2)cd build
+3)cmake ../
+4)make
+5)./Sort
 
 If you want to add your own sorting method, then you will need to:
     For Windows:    
