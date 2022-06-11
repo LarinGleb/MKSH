@@ -15,9 +15,9 @@
 #include <cmath> 
 
 #define COUNT_TESTS 3
-#define FIRST_TEST (int)pow(2, 8)
-#define SECOND_TEST (int)pow(2, 10)
-#define THIRD_TEST (int)pow(2, 12)
+#define FIRST_TEST (int)pow(2, 11)
+#define SECOND_TEST (int)pow(2, 13)
+#define THIRD_TEST (int)pow(2, 15)
 
 
 int tests[COUNT_TESTS] = {FIRST_TEST, SECOND_TEST, THIRD_TEST};
@@ -71,17 +71,17 @@ void TestMassive(std::string nameSort,  void(*sortFunc)(int*, int, int*, int*, b
 	std::cout << "Count elements: " << countElem << std::endl;
 	
 	std::cout << "For sort reversed = false: " << std::endl;
-	std::cout << "    1) Time: " << difference << " ms" << std::endl;
+	std::cout << "    1) Time: " << difference << " millisec" << std::endl;
 	std::cout << "    2) Count swaps: " << countSwaps << std::endl;
 	std::cout << "    3) Count compares: " << countCompares << std::endl;
 
 	std::cout << "For sort reversed = true: " << std::endl;
-        std::cout << "    1) Time: " << differenceReversed << " ms" << std::endl;
+        std::cout << "    1) Time: " << differenceReversed << " millisec" << std::endl;
         std::cout << "    2) Count swaps: " << countReversedSwaps << std::endl;
         std::cout << "    3) Count compares: " << countReversedCompares << std::endl;
 
 	std::cout << "For half sorted massive before start sort:" << std::endl;
-	std::cout << "    1) Time: " << differenceHalf << " ms" << std::endl;
+	std::cout << "    1) Time: " << differenceHalf << " millisec" << std::endl;
 	std::cout << "    2) Count swaps: " << countHalfSwaps << std::endl;
 	std::cout << "    3) Count compares: " << countHalfCompares << std::endl;
 
